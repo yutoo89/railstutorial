@@ -27,7 +27,6 @@ RUN apk update && \
 COPY Gemfile ${ROOT}
 COPY Gemfile.lock ${ROOT}
 
-RUN gem install bundler:2.2.15
 RUN bundle install
 RUN apk del build-packs
 

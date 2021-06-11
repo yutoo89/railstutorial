@@ -1,3 +1,8 @@
+# memo
+# docker-compose run --rm --no-deps web rails new . -fT -d postgresql
+# docker-compose run --rm web rails db:create
+# docker-compose run --rm web rails webpacker:install
+
 version: '3'
 
 services:
