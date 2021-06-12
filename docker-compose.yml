@@ -3,13 +3,15 @@
 # docker-compose run --rm web rails db:create
 # docker-compose run --rm web rails webpacker:install
 
-version: '3'
+version: "3"
 
 services:
   db:
     image: postgres:12.0-alpine
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
     environment:
       - TZ=Asia/Tokyo
 

@@ -1,0 +1,17 @@
+@startuml toy-app-erd
+
+entity users {
+    id
+    name
+    email
+}
+
+entity microposts {
+    id
+    user_id
+    content
+}
+
+.users -{ .microposts
+
+@enduml
