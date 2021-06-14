@@ -60,6 +60,7 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    ansi (1.5.0)
     ast (2.4.2)
     backport (1.2.0)
     benchmark (0.1.1)
@@ -97,6 +98,11 @@ GEM
     method_source (1.0.0)
     mini_mime (1.0.3)
     minitest (5.14.4)
+    minitest-reporters (1.4.3)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
     msgpack (1.4.2)
     nio4r (2.5.7)
     nokogiri (1.11.7-x86_64-darwin)
@@ -240,6 +246,8 @@ DEPENDENCIES
   byebug
   jbuilder (~> 2.7)
   listen (~> 3.3)
+  minitest
+  minitest-reporters
   pg (~> 1.1)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
